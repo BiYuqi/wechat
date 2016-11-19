@@ -1,0 +1,35 @@
+<!--<div class="bar bar-dark item-input-inset" id="friendShip" align-title="left">-->
+    <!--<button class="button icon ion-android-arrow-back" ng-click="prevThird()"></button>-->
+    <!--<h2 class="title">朋友圈</h2>-->
+<!--</div>-->
+<ion-header-bar align-title="left" class="bar-dark" id="friendShip">
+    <div class="buttons">
+        <button class="button icon ion-android-arrow-back" ng-click="friendBack()"></button>
+    </div>
+    <h1 class="title" style="left: 28px;">朋友圈</h1>
+    <div class="buttons">
+        <button class="button icon ion-camera"></button>
+    </div>
+</ion-header-bar>
+<ion-content class="has-header" id="friendContent">
+    <div class="imgItem">
+        <img class="itemBg" src="app/images/008.jpg" alt="">
+        <span class="perName">LoadingMore</span>
+        <img class="itemPer" src="app/images/001.jpg" alt="">
+    </div>
+    <div class="list">
+        <div class="item item-avatar" ng-repeat="fr in friendList track by $index">
+            <img src="{{fr.userImg}}">
+            <h2>{{fr.name}}</h2>
+            <p>{{fr.text}}</p>
+            <div class="imgsUser">
+                <img src="{{fr.imgs}}" alt="">
+            </div>
+            <div class="userTimer">
+                <a>{{fr.time}}</a>
+                <!--自定义指令-->
+                <div user-comment></div>
+            </div>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,25 @@
+
+<ion-view view-title="Sign In" class="loginBg calm-bg" hide-nav-bar="true">
+    <ion-content scroll="false">
+        <div class="row responsive-sm login-area">
+            <div class="col">
+                <div class="app-logo">
+                    <img src="app/images/girl.jpg" alt="">
+                </div>
+                <div class="list list-inset removePM">
+                    <label for="" class="item item-input">
+                        <span class="input-label">账号:</span>
+                        <input type="text" ng-model="userInfo.userName" placeholder="昵称/邮箱/手机号">
+                    </label>
+                    <label for="" class="item item-input">
+                        <span class="input-label">密码:</span>
+                        <input type="password" ng-model="userInfo.password" placeholder="******">
+                    </label>
+                </div>
+                <div class="loginBtn">
+                    <button class="button button-block button-balanced" ng-click="login()">登录</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<div class="bar bar-dark" id="chatDetail">
+    <button class="button icon ion-android-arrow-back" ng-click="backPrev()"></button>
+    <h1 class="title">{{perName}}</h1>
+    <button class="button button-icon ion-person" ng-click="perDetail()"></button>
+</div>
+
+<ion-view title="毕宇旗">
+    <ion-content class="has-header has-footer">
+        <div ng-repeat="n in detailList" class="message-wrapper">
+            <img class="left person-img" ng-src="{{n.pic}}">
+            <div class="chat-bubble left">
+                <div class="message">
+                    {{n.content}}{{n.name}}
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar>
+        <button class="button button-icon ion-radio-waves"></button>
+        <textarea class="textare" required minlength="1" maxlength="1500"></textarea>
+        <button class="button button-icon ion-android-send">{{con}}</button>
+    </ion-footer-bar>
+</ion-view>

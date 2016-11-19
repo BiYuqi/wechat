@@ -1,0 +1,36 @@
+<ion-header-bar class="bar-dark" align-title="left">
+    <ion-title class="title">微信</ion-title>
+    <div class="buttons" id="mainButton">
+        <i class="button button-clear icon ion-ios-search" ng-click="btnSearch()"></i>
+        <i class="button button-clear icon ion-ios-plus-empty"></i>
+    </div>
+</ion-header-bar>
+
+<ion-tabs class="tabs-light tabs-icon-top" id="mainTabs">
+    <ion-tab title="微信"
+            icon-on="ion-ios-chatbubble balanced"
+            icon-off="ion-ios-chatbubble-outline"
+            ui-sref="main.chat">
+        <ion-nav-view  name="main-chat"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="通讯录"
+             icon-on="ion-ios-people balanced"
+             icon-off="ion-ios-people-outline"
+             ui-sref="main.contacts">
+        <ion-nav-view name="main-contact"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="发现"
+             icon-on="ion-compass balanced"
+             icon-off="ion-android-compass"
+             ui-sref="main.discovery">
+        <ion-nav-view name="main-discovery"></ion-nav-view>
+
+    </ion-tab>
+    <ion-tab title="我"
+             icon-on="ion-ios-person balanced"
+             icon-off="ion-ios-person-outline"
+             ui-sref="main.personal">
+        <ion-nav-view name="main-personal"></ion-nav-view>
+
+    </ion-tab>
+</ion-tabs>

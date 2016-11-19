@@ -1,0 +1,14 @@
+<ion-view title="微信" class="stable-bg" id="chatPart">
+    <ion-content class="chatScroll">
+        <ion-list class="chatList">
+            <ion-item ng-repeat="n in chatList"
+                      ng-click="toDetail($index,n.name)"
+                      class="item item-avatar"
+                      on-hold="onHold($index)">
+                <img ng-src="{{n.pic}}">
+                <h2>{{n.name}}</h2>
+                <p>{{n.content}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+
+<ion-view title="通讯录">
+    <ion-content class="has-header" id="listContact">
+        <div class="list" ng-repeat="items in contactList">
+            <div class="item item-divider">
+                {{items.type}}
+            </div>
+            <a class="item contactItem" ng-repeat="n in items.contact">
+                <img class="contactImg" ng-src="{{n.img}}" alt="">
+                <span>{{n.name}}</span>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

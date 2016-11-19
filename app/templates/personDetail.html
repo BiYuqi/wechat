@@ -1,0 +1,56 @@
+<div class="bar bar-dark" id="backTo">
+    <button class="button icon ion-android-arrow-back" ng-click="prevThird()"></button>
+    <h1 class="title">{{perName}}</h1>
+</div>
+<ion-view title="毕宇旗" class="stable-bg">
+    <ion-content scroll="false" class="has-header has-footer" id="detailPerson">
+        <div class="list listPer">
+            <div class="item item-avatar">
+                <img src="app/images/girl.jpg">
+                <h2>Marty McFly</h2>
+                <p>November 05, 1955</p>
+            </div>
+        </div>
+        <ul class="list listMiddle">
+            <li class="item item-toggle">
+                置顶聊天
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox" checked="">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                消息免打扰
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                聊天文件
+            </li>
+        </ul>
+        <ul class="list listChat">
+            <li class="item item-toggle">
+                <span>设置当前聊天背景</span>
+            </li>
+            <li class="item item-toggle">
+                <span>查找聊天记录</span>
+            </li>
+        </ul>
+        <ul class="list clearChat">
+            <li class="item item-toggle">
+                <span>清空聊天记录</span>
+            </li>
+        </ul>
+        <ul class="list tsChat">
+            <li class="item item-toggle">
+                <span>投诉</span>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
